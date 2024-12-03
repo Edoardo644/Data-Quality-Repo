@@ -1,0 +1,179 @@
+Table : BRIDGES
+Columns : A, B, C, D, E, F, G, H, I, J, K, L, M
+
+Functional Dependencies: 
+{A} -> {D}
+{A} -> {I}
+{A} -> {M}
+{A} -> {L}
+{A} -> {F}
+{A} -> {C}
+{A} -> {H}
+{A} -> {J}
+{A} -> {K}
+{A} -> {E}
+{A} -> {G}
+{A} -> {B}
+{C} -> {B}
+{D, F} -> {I}
+{D, F} -> {H}
+{D, F} -> {J}
+{D, F} -> {K}
+{D, F} -> {G}
+{D, F} -> {B}
+{D, C} -> {I}
+{D, C} -> {M}
+{D, C} -> {A}
+{D, C} -> {G}
+{D, C} -> {L}
+{D, C} -> {H}
+{D, C} -> {J}
+{D, C} -> {E}
+{D, C} -> {K}
+{D, C} -> {F}
+{D, B, L} -> {J}
+{G, L, C} -> {E}
+{M, C, J} -> {H}
+{G, C, J} -> {L}
+{G, C, J} -> {E}
+{D, B, E} -> {J}
+{D, M, K} -> {I}
+{D, L, K} -> {J}
+{D, E, K} -> {J}
+{D, M, F} -> {L}
+{D, M, F} -> {C}
+{D, M, F} -> {E}
+{D, M, F} -> {A}
+{D, L, F} -> {M}
+{D, L, F} -> {C}
+{D, L, F} -> {E}
+{D, L, F} -> {A}
+{M, C, F} -> {H}
+{L, C, F} -> {H}
+{C, J, F} -> {L}
+{C, J, F} -> {H}
+{D, E, F} -> {L}
+{D, E, F} -> {M}
+{D, E, F} -> {C}
+{D, E, F} -> {A}
+{J, K, F} -> {H}
+{M, L, H, C} -> {J}
+{I, M, C, F} -> {L}
+{I, M, C, F} -> {J}
+{M, L, C, F} -> {J}
+{I, H, C, F} -> {L}
+{I, C, J, F} -> {M}
+{M, C, F, K} -> {L}
+{M, C, F, K} -> {J}
+{L, C, F, K} -> {J}
+{H, C, F, K} -> {L}
+{H, C, F, K} -> {J}
+{M, C, F, E} -> {G}
+{M, C, F, E} -> {L}
+{M, C, F, E} -> {J}
+{L, C, F, E} -> {J}
+{H, C, F, E} -> {L}
+{H, C, F, E} -> {J}
+{D, I, L, G} -> {E}
+{D, M, L, G} -> {E}
+{D, L, H, G} -> {E}
+{I, M, C, G} -> {E}
+{M, L, C, G} -> {H}
+{M, L, C, G} -> {J}
+{I, H, C, G} -> {E}
+{D, M, J, G} -> {E}
+{I, C, F, G} -> {M}
+{I, C, F, G} -> {L}
+{I, C, F, G} -> {H}
+{I, C, F, G} -> {J}
+{I, C, F, G} -> {E}
+{L, C, F, G} -> {M}
+{L, C, F, G} -> {J}
+{H, C, F, G} -> {M}
+{L, J, F, G} -> {H}
+{C, J, F, G} -> {M}
+{M, C, K, G} -> {E}
+{H, C, K, G} -> {E}
+{C, F, K, G} -> {E}
+{J, F, E, G} -> {H}
+{D, I, L, B} -> {E}
+{D, M, L, B} -> {E}
+{D, M, J, B} -> {E}
+{L, J, F, B} -> {H}
+{M, F, K, B} -> {L}
+{J, F, E, B} -> {H}
+{I, D, B, M, G} -> {K}
+{I, D, B, L, K} -> {M}
+{I, D, B, H, K} -> {G}
+{D, B, M, H, K} -> {G}
+{I, D, B, E, K} -> {M}
+{D, B, H, E, K} -> {G}
+{I, B, M, L, F} -> {H}
+{I, B, G, L, F} -> {H}
+{I, M, G, L, F} -> {H}
+{I, B, L, E, F} -> {H}
+{I, B, J, E, F} -> {M}
+{B, G, J, E, F} -> {M}
+{I, B, M, K, F} -> {H}
+{I, M, L, K, F} -> {H}
+{B, H, E, K, F} -> {L}
+{I, C, E, K, F} -> {M}
+{I, C, E, K, F} -> {L}
+{I, C, E, K, F} -> {H}
+{I, C, E, K, F} -> {J}
+{I, C, E, K, F} -> {G}
+{B, J, E, K, F} -> {L}
+{I, M, H, F, K, E} -> {L}
+{I, M, J, F, K, E} -> {L}
+{I, M, H, F, E, G} -> {L}
+{I, M, J, F, E, G} -> {L}
+{L, H, F, K, E, G} -> {M}
+{L, J, F, K, E, G} -> {M}
+{I, L, F, K, E, B} -> {M}
+{I, H, F, K, E, B} -> {M}
+{I, M, H, F, G, B} -> {L}
+{I, L, J, F, G, B} -> {M}
+{I, H, F, E, G, B} -> {L}
+{I, J, F, E, G, B} -> {L}
+{L, F, K, E, G, B} -> {M}
+{H, F, K, E, G, B} -> {M}
+
+Equivalences: 
+{D, M, F} <-> {D, L, F}
+{D, M, F} <-> {D, E, F}
+{D, L, F} <-> {D, E, F}
+{M, L, C, J} <-> {M, L, H, C}
+{I, M, C, F} <-> {I, C, J, F}
+{I, L, C, F} <-> {I, H, C, F}
+{M, C, J, F} <-> {M, L, C, F}
+{L, C, F, K} <-> {H, C, F, K}
+{C, J, F, K} <-> {L, C, F, K}
+{C, J, F, K} <-> {H, C, F, K}
+{M, C, F, E} <-> {L, C, F, G}
+{M, C, F, E} <-> {C, J, F, G}
+{L, C, F, E} <-> {H, C, F, E}
+{C, J, F, E} <-> {L, C, F, E}
+{C, J, F, E} <-> {H, C, F, E}
+{M, C, J, G} <-> {M, L, C, G}
+{M, C, F, G} <-> {H, C, F, G}
+{L, C, F, G} <-> {C, J, F, G}
+{D, M, E, B} <-> {D, M, J, B}
+{D, B, M, G, K} <-> {I, D, B, M, G}
+{D, B, M, L, K} <-> {I, D, B, L, K}
+{D, B, M, E, K} <-> {I, D, B, E, K}
+{I, G, C, K, F} <-> {I, C, E, K, F}
+{I, M, L, F, K, E} <-> {I, M, H, F, K, E}
+{I, M, L, F, E, G} <-> {I, M, H, F, E, G}
+{I, M, F, K, E, B} <-> {I, L, F, K, E, B}
+{I, M, F, K, E, B} <-> {I, H, F, K, E, B}
+{I, L, F, K, E, B} <-> {I, H, F, K, E, B}
+{I, M, L, F, G, B} <-> {I, M, H, F, G, B}
+{I, L, F, E, G, B} <-> {I, H, F, E, G, B}
+{M, F, K, E, G, B} <-> {L, F, K, E, G, B}
+
+Time (s): 80.4894
+Row count: 108
+Attribute count: 13
+Number of Equivalences: 31
+Number of FDs: 135
+Number of FDs checked: 4434
